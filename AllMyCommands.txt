@@ -57,3 +57,6 @@ then merge them
 then pushing all data
 -git push
 
+then showing the new branch 
+-git checkout ReadMe
+-git push origin ReadMe
