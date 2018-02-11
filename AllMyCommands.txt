@@ -17,11 +17,14 @@ then add all files
 -git add .
 
 then delete the 2nd file
--git rm --cached 2ndFile.txt
+-git rm 2ndFile.txt
 
 then restore it
--git reset HEAD .
--git checkout -- .
+-git commit -m "delete"
+-git log --diff-filter=D --summary   
+then check for the name of the commit let it be *2222*
+then revert the commit
+-git checkout 2222~1 2ndFile.txt
 
 then commit the changes
 git commit -m "name if the commit"
